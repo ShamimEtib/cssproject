@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.navbar {
+    background-color: #43281c;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 50px; 
+
+}
+
+.img__logo {
+    width: 25px;
+    height: 25px;
+}
+
+.coffee__logo {
+    text-decoration: none;
+    color: #fbf2c0;
+    font-size: 1.6rem;
+    padding-left: 0.3rem;
+    font-weight: normal;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "items user";
+    row-gap: 30px;
+    margin: 0 auto;
+    column-gap: 30px;
+    padding: 30px;
+  }
+
+  .items {
+      grid-area: items;
+      background-color: #eee1d5;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+      padding: 15px;
+      margin-bottom: 20px;
+      width: 100%;
+  }
+
+  .item__logo {
+      color: #885a2d;
+      padding: 1rem 0;
+      font-size: 16px;
+      font-weight: normal;
+  }
+
+  .list__item {
+      list-style: none;
+  }
+
+  .detail {
+      display: grid;
+      padding: 10px 0;
+      grid-template-columns: 1fr 8fr 1fr;
+      grid-template-areas: 
+        "num food_nam pric"
+        "num food_deta pric";
+
+      border-bottom: 2px solid #DDB892;
+      row-gap: 8px;
+  }
+
+  .detail:last-child {
+    border-bottom: none;
+  }
+
+  .numb {
+      grid-area: num;
+  }
+
+  .food_name {
+      grid-area: food_nam;
+      font-weight: bold;
+  }
+
+  .price {
+      grid-area: pric;
+      font-weight: bold;
+  }
+
+  .food_detai {
+      grid-area: food_deta;
+      list-style: none;
+      color: #B08968;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+  }
+
+  .item-option {
+      margin: 5px;
+  }
+
+  .user {
+    grid-area: user;
+  }
+
+  .username {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .example-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .example-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    width: 100%;
+    padding: 8px;
+    border-radius: 100px;
+    text-indent: 18px;
+    font-size: 18px;
+  }
+
+  .input-label {
+    background-color: #eee1d5;
+    color: #885a2d;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+  }
+
+  .short-input {
+    max-width: 200px;
+  }
+
+  .userdetail {
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .total {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+  .sub-total {
+    display: grid;
+    row-gap: 20px;
+  }
+
+  .first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left {
+    padding-left: 50%;
+  }
+
+  .right {
+    padding-left: 40%;
+  }
+
+  .left-last {
+    padding-left: 50%;
+    font-weight: bold;
+  }
+
+  .right-last {
+    padding-left: 40%;
+    font-weight: bold;
+  }
+  
+  .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #deb993;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 2rem;
+  }
